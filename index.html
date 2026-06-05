@@ -69,6 +69,30 @@
       font-weight: bold;
       margin-bottom: 10px;
 }
+
+    .project-card {
+      display: flex;
+      gap: 20px;
+      background: #1f2937;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: transform 0.2s ease, background 0.2s ease;
+}
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      background: #273449;
+}
+
+    .project-card img {
+      width: 140px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+}
     
   </style>
 </head>
@@ -124,19 +148,22 @@
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Capping Project – UI Design</h3>
-    <p>
-      Designed full UI wireframes and interface flow for my capping project.
-    </p>
-  </div>
+  <a class="project-card" href="projects/capping-project.html">
+    <img src="images/capping.png" alt="Capping Project UI">
+    <div>
+      <h3>Capping Project – UI Design</h3>
+      <p>UI wireframes, interaction flow, and interface design for my capstone project.</p>
+    </div>
+  </a>
 
-  <div class="card">
-    <h3>System Design Project</h3>
-    <p>
-      Built system design documentation and UI structure. Includes a working demo site created in Lovable.
-    </p>
-  </div>
+  <a class="project-card" href="projects/system-design.html">
+    <img src="images/system.png" alt="System Design Project">
+    <div>
+      <h3>System Design Project</h3>
+      <p>System architecture + UI structure with a working demo built in Lovable.</p>
+    </div>
+  </a>
+
 </section>
 
 <section id="contact">
