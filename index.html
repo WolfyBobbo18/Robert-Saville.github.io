@@ -97,6 +97,31 @@ p {
       object-fit: cover;
       border-radius: 8px;
 }
+
+    .button {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+      font-weight: bold;
+}
+
+    .button:hover {
+      background: #2563eb;
+}
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+}
+
+    .skills-grid .card ul {
+      padding-left: 20px;
+}
     
   </style>
 </head>
@@ -105,17 +130,25 @@ p {
 
 <header>
   <h1>Robert Saville</h1>
-  <p>B.S in Games & Emerging Media | UX Minor | 
+
+  <p>
+    B.S. in Games & Emerging Media | UX Minor
   </p>
 
-</p>
-    Interested in interactive design & Emerging Technologies
+  <p>
+    Interested in Interactive Design & Emerging Technologies
+  </p>
+
+  <p>
+    <a href="resume.pdf" class="button">Download Resume</a>
+    <a href="https://www.linkedin.com/in/bobby-saville/" class="button">LinkedIn</a>
   </p>
 </header>
 
 <nav>
   <a href="#about">About</a>
-   <a href="#current">Currently Working On</a>
+  <a href="#current">Currently Working On</a>
+  <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -152,6 +185,40 @@ p {
     </ul>
   </div>
 </section> 
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="card">
+      <h3>Design Tools</h3>
+      <ul>
+        <li>HTML/C#</li>
+        <li>Unity (Learning)</li>
+        <li>Godot</li>
+        <li>Adobe Photoshop</li>
+        <Li>Adobe Illustrator</Li>
+        <li>LucidChart</li>
+        <li>Lovable</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Core Skills</h3>
+      <ul>
+        <li>UI/UX Design</li>
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>Usability Testing</li>
+        <li>Information Architecture</li>
+        <li>User Flows</li>
+        <li>Responsive Layout Design</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
   
 <section id="projects">
   <h2>Projects</h2>
@@ -160,19 +227,23 @@ p {
     <img src="images/capping.png" alt="Capping Project UI">
     <div>
       <h3>Capping Project – Puzzle UI & Interface Design</h3>
-      <p>As part of my capstone game project, I designed and refined user interface systems
-      that supported player exploration and puzzle solving throughout the game.
       
+      <p>
+        As part of my capstone game project, I designed and refined user interface systems
+         that supported player exploration and puzzle solving throughout the game.
+      </p>
+
+      <p>
       My work focused on creating clear, intuitive interfaces that communicated gameplay
       information without distracting from the player experience. Using Figma, I iterated
       on multiple UI concepts, refining card layouts, exploration menus, and interaction
       systems based on feedback and testing.
-      
+      </p>
+
+      <p>
       The final implementation included a puzzle solving interface integrated directly into
       gameplay, along with supporting menus and navigation elements that helped create a cohesive
       visual experience across the project. 
-      </p>
-
       </p>
 
       <p><strong>Tools:</strong> Figma, Unity</p>
@@ -192,12 +263,48 @@ p {
   </a>
 
   <a class="project-card" href="projects/system-design.html">
-    <img src="images/system.png" alt="System Design Project">
-    <div>
-      <h3>System Design Project</h3>
-      <p>System architecture + UI structure with a working demo built in Lovable.</p>
-    </div>
-  </a>
+  <img src="images/system.png" alt="System Design Project">
+
+  <div>
+    <h3>Client Website System Design Project</h3>
+
+    <p>
+      As part of a team-based systems design project, I collaborated with a real client to design and develop a functional website prototype tailored to their needs and goals.
+    </p>
+
+    <p>
+      Throughout the project, our team conducted requirements gathering, created use cases, and maintained regular communication with the client to ensure the solution aligned with their vision.
+    </p>
+
+    <p>
+      My primary contributions focused on interface design, information architecture, and helping translate client requirements into an intuitive user experience.
+    </p>
+
+    <p>
+      Working closely with both the client and my teammates, I contributed to the planning, design, and presentation of the final prototype.
+    </p>
+
+    <p>
+      The completed demo successfully met the client's expectations and received positive feedback upon delivery.
+    </p>
+
+    <p><strong>Tools:</strong> Lovable</p>
+
+    <p><strong>Responsibilities:</strong></p>
+
+    <ul>
+      <li>UI/UX Design</li>
+      <li>Information Architecture</li>
+      <li>Requirements Gathering</li>
+      <li>Stakeholder Communication</li>
+      <li>Use Case Development</li>
+      <li>Interface Layout Design</li>
+      <li>Team Collaboration</li>
+      <li>Prototype Development</li>
+    </ul>
+
+  </div>
+</a>
 
 </section>
 
@@ -205,8 +312,8 @@ p {
   <h2>Contact</h2>
 
   <div class="card">
-    <p>Email: yourname@email.com</p>
-    <p>GitHub: https://github.com/yourusername</p>
+    <p>Email: bobbysaville@icloud.com</p>
+    <p>GitHub: https://github.com/Rober-Saville</p>
   </div>
 </section>
 
