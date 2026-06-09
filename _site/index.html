@@ -1,12 +1,367 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
- </head>
- <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is my GitHub Pages website. More content coming soon!</p>
- </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert Saville | Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    
+p {
+  margin-bottom: 20px;
+}
+    
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: #111827;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #1f2937;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .card {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #111827;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #22c55e;
+      color: #0f172a;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+}
+
+    .project-card {
+      display: flex;
+      gap: 20px;
+      background: #1f2937;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: transform 0.2s ease, background 0.2s ease;
+}
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      background: #273449;
+}
+
+    .project-card img {
+      width: 140px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+}
+
+    .button {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+      font-weight: bold;
+}
+
+    .button:hover {
+      background: #2563eb;
+}
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+}
+
+    .skills-grid .card ul {
+      padding-left: 20px;
+}
+    
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Robert Saville</h1>
+
+  <p>
+    B.S. in Games & Emerging Media | UX Minor
+  </p>
+
+  <p>
+    Interested in Interactive Design & Emerging Technologies
+  </p>
+
+  <p>
+    <a href="Robert Saville Resume.docx.pdf" class="button">Download Resume</a>
+    <a href="https://www.linkedin.com/in/bobby-saville/" class="button">LinkedIn</a>
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#current">Currently Working On</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+  Hi, I'm Robert Saville, a recent Cum Laude graduate from Marist University.
+</p>
+
+<p>
+  I enjoy designing interactive experiences that combine usability, creativity, and thoughtful design. My academic work has focused on UI/UX design, game interfaces, wireframing, prototyping, and user-centered design principles.
+</p>
+
+<p>
+  Through projects ranging from mobile app concepts to game UI systems, I've explored how design can improve the way people interact with technology. I'm particularly interested in interactive design, emerging technologies, and the intersection of creativity and user experience.
+</p>
+
+<p>
+  Outside of design, I enjoy astronomy and astrophotography, interests that often inspire my personal projects and future development goals.
+</p>
+</section>
+
+<section id="current">
+  <h2>Currently Working On</h2>
+
+  <div class="card">
+    <span class="tag">In Progress</span>
+
+    <ul>
+      <li>Learning Unity</li>
+      <li>Building a personal game project inspired by astrophotography</li>
+      <li>Expanding my portfolio</li>
+    </ul>
+  </div>
+</section> 
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="card">
+      <h3>Design Tools</h3>
+      <ul>
+        <li>HTML/C#</li>
+        <li>Unity (Learning)</li>
+        <li>Godot</li>
+        <li>Adobe Photoshop</li>
+        <Li>Adobe Illustrator</Li>
+        <li>LucidChart</li>
+        <li>Lovable</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Core Skills</h3>
+      <ul>
+        <li>UI/UX Design</li>
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>Usability Testing</li>
+        <li>Information Architecture</li>
+        <li>User Flows</li>
+        <li>Responsive Layout Design</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+  
+<section id="projects">
+  <h2>Projects</h2>
+
+  <a class="project-card" href="projects/capping-project.html">
+    <img src="images/capping.png" alt="Capping Project UI">
+    <div>
+      <h3>Capping Project – Puzzle UI & Interface Design</h3>
+      
+      <p>
+        As part of my capstone game project, I designed and refined user interface systems
+         that supported player exploration and puzzle solving throughout the game.
+      </p>
+
+      <p>
+      My work focused on creating clear, intuitive interfaces that communicated gameplay
+      information without distracting from the player experience. Using Figma, I iterated
+      on multiple UI concepts, refining card layouts, exploration menus, and interaction
+      systems based on feedback and testing.
+      </p>
+
+      <p>
+      The final implementation included a puzzle solving interface integrated directly into
+      gameplay, along with supporting menus and navigation elements that helped create a cohesive
+      visual experience across the project. 
+      </p>
+
+      <p><strong>Tools:</strong> Figma, Unity</p>
+
+      <p><strong>Responsibilities:</strong></p>
+
+      <ul>
+        <li>UI/UX Design</li>
+        <li>Wireframing & Prototyping</li>
+        <li>Interface Layout Design</li>
+        <li>Usability Testing</li>
+        <li>Quality Assurance Testing</li>
+     </ul>
+      
+      </p>
+    </div>
+  </a>
+
+  <a class="project-card" href="projects/system-design.html">
+  <img src="images/system.png" alt="System Design Project">
+
+  <div>
+    <h3>Client Website System Design Project</h3>
+
+    <p>
+      As part of a team-based systems design project, I collaborated with a real client to design and develop a functional website prototype tailored to their needs and goals.
+    </p>
+
+    <p>
+      Throughout the project, our team conducted requirements gathering, created use cases, and maintained regular communication with the client to ensure the solution aligned with their vision.
+    </p>
+
+    <p>
+      My primary contributions focused on interface design, information architecture, and helping translate client requirements into an intuitive user experience.
+    </p>
+
+    <p>
+      Working closely with both the client and my teammates, I contributed to the planning, design, and presentation of the final prototype.
+    </p>
+
+    <p>
+      The completed demo successfully met the client's expectations and received positive feedback upon delivery.
+    </p>
+
+    <p><strong>Tools:</strong> Lovable</p>
+
+    <p><strong>Responsibilities:</strong></p>
+
+    <ul>
+      <li>UI/UX Design</li>
+      <li>Information Architecture</li>
+      <li>Requirements Gathering</li>
+      <li>Stakeholder Communication</li>
+      <li>Use Case Development</li>
+      <li>Interface Layout Design</li>
+      <li>Team Collaboration</li>
+      <li>Prototype Development</li>
+    </ul>
+
+  </div>
+</a>
+
+<a class="project-card" href="projects/Campus-connect.html">
+    <img src="images/capping.png" alt="Campus App UI">
+    <div>
+      <h3>Campus Connect – UI Prototype</h3>
+      
+      <p>
+        Campus Connect is a mobile application prototype designed to help first-year 
+        college students transition more smoothly to campus life by providing essential
+        information and services in a single, accesible platform.
+      </p>
+
+      <p>
+      The project was created as part of a UX design course and focused on improving the
+        student experience during their first year. Through user centered design principles,
+        I explored ways to reduce confusion and improve access to important campus resources.
+      </p>
+
+      <p>
+      Key features include access to class schedules, a digital campus map, campus points of interest
+        with students ratings and reviews, and shuttle system information and transportation access.
+        The goal was to replace fragmented information sources with a more intuitive and convenient
+        mobile experience that helps students navigate campus, discover services, and feel more connected
+        to their community.
+      </p>
+
+      <p><strong>Tools:</strong> Figma</p>
+
+      <p><strong>Responsibilities:</strong></p>
+
+      <ul>
+        <li>UX Research</li>
+        <li>UI Design</li>
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>Information Architecture</li>
+        <li>User Flow Design</li>
+     </ul>
+      
+      </p>
+    </div>
+  </a>
+  
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="card">
+    <p>Email: bobbysaville@icloud.com</p>
+    <p>GitHub: https://github.com/Robert-Saville</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Robert Saville</p>
+</footer>
+
+</body>
+</html>
