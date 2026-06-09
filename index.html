@@ -122,6 +122,26 @@ p {
     .skills-grid .card ul {
       padding-left: 20px;
 }
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #22c55e;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
     
   </style>
 </head>
@@ -155,21 +175,38 @@ p {
 
 <section id="about">
   <h2>About Me</h2>
-  <p>
-  Hi, I'm Robert Saville, a recent Cum Laude graduate from Marist University.
-</p>
 
-<p>
-  I enjoy designing interactive experiences that combine usability, creativity, and thoughtful design. My academic work has focused on UI/UX design, game interfaces, wireframing, prototyping, and user-centered design principles.
-</p>
+  <div class="about-container">
 
-<p>
-  Through projects ranging from mobile app concepts to game UI systems, I've explored how design can improve the way people interact with technology. I'm particularly interested in interactive design, emerging technologies, and the intersection of creativity and user experience.
-</p>
+    <img src="Images/IMG_0927.jpeg" alt="Robert Saville">
 
-<p>
-  Outside of design, I enjoy astronomy and astrophotography, interests that often inspire my personal projects and future development goals.
-</p>
+    <div class="about-text">
+
+      <p>
+        Hi, I'm Robert Saville, a recent Cum Laude graduate from Marist University.
+      </p>
+
+      <p>
+        I enjoy designing interactive experiences that combine usability, creativity,
+        and thoughtful design. My academic work has focused on UI/UX design,
+        game interfaces, wireframing, prototyping, and user-centered design principles.
+      </p>
+
+      <p>
+        Through projects ranging from mobile app concepts to game UI systems,
+        I've explored how design can improve the way people interact with technology.
+        I'm particularly interested in interactive design, emerging technologies,
+        and the intersection of creativity and user experience.
+      </p>
+
+      <p>
+        Outside of design, I enjoy astronomy and astrophotography, interests that often
+        inspire my personal projects and future development goals.
+      </p>
+
+    </div>
+
+  </div>
 </section>
 
 <section id="current">
