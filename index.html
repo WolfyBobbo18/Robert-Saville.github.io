@@ -142,6 +142,32 @@ p {
   flex: 1;
   min-width: 300px;
 }
+
+    .project-info {
+    flex: 1;
+}
+
+.project-preview {
+    min-width: 250px;
+    text-align: center;
+    align-self: center;
+}
+
+.project-preview img {
+    width: 220px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover .project-preview img {
+    transform: scale(1.03);
+}
+
+.view-project {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #60a5fa;
+}
     
   </style>
 </head>
@@ -261,43 +287,50 @@ p {
   <h2>Projects</h2>
 
   <a class="project-card" href="Projects/capping-project.html">
-    <div>
-      <h3>Capping Project – Puzzle UI & Interface Design</h3>
-      
-      <p>
-        This is my capstone game project focused on puzzle solving,
-      </p>
 
-      <p>
-        exploration, and environmental storytelling. 
-      </p>
+  <div class="project-info">
 
-      <p><strong>Tools:</strong> Figma, Unity</p>
+    <h3>Capping Project – Puzzle UI & Interface Design</h3>
 
-      <p><strong>Responsibilities:</strong></p>
+    <p>
+      This is my capstone game project focused on puzzle solving,
+      exploration, and environmental storytelling.
+    </p>
 
-      <ul>
-        <li>UI/UX Design</li>
-        <li>Wireframing & Prototyping</li>
-        <li>Interface Layout Design</li>
-        <li>Usability Testing</li>
-        <li>Quality Assurance Testing</li>
-     </ul>
-      
-      </p>
-    </div>
-  </a>
+    <p><strong>Tools:</strong> Figma, Unity</p>
+
+    <p><strong>Responsibilities:</strong></p>
+
+    <ul>
+      <li>UI/UX Design</li>
+      <li>Wireframing & Prototyping</li>
+      <li>Interface Layout Design</li>
+      <li>Usability Testing</li>
+      <li>Quality Assurance Testing</li>
+    </ul>
+
+  </div>
+
+  <div class="project-preview">
+
+    <img src="Images/capping-thumbnail.png" alt="Capping Project Screenshot">
+
+    <p class="view-project">
+      View Case Study →
+    </p>
+
+  </div>
+
+</a>
 
   <a class="project-card" href="Projects/system-design-project.html">
 
-  <div>
+  <div class="project-info">
+
     <h3>Client Website System Design Project</h3>
 
     <p>
-      Designed a website prototype for a local blacksmith buisness,
-    </p>
-
-    <p>
+      Designed a website prototype for a local blacksmith business,
       focusing on information architecture, UX design, and client requirements.
     </p>
 
@@ -317,36 +350,52 @@ p {
     </ul>
 
   </div>
+
+  <div class="project-preview">
+
+    <img src="Images/system-design-thumbnail.png" alt="System Design Project Screenshot">
+
+    <p class="view-project">
+      View Case Study →
+    </p>
+
+  </div>
+
 </a>
 
 <a class="project-card" href="Projects/campus-connect.html">
-    <div>
-      <h3>Campus Connect – UI Prototype</h3>
-      
-      <p>
-       Mobile wellness aplication concept focused on helping students
-      </p>
 
-      <p>
-        access campus health resources and support services
-      </p>
+  <div class="project-content">
+    <h3>Campus Connect – UI Prototype</h3>
 
-      <p><strong>Tools:</strong> Figma</p>
+    <p>
+      Mobile wellness application concept focused on helping students
+    </p>
 
-      <p><strong>Responsibilities:</strong></p>
+    <p>
+      access campus health resources and support services.
+    </p>
 
-      <ul>
-        <li>UX Research</li>
-        <li>UI Design</li>
-        <li>Wireframing</li>
-        <li>Prototyping</li>
-        <li>Information Architecture</li>
-        <li>User Flow Design</li>
-     </ul>
-      
-      </p>
-    </div>
-  </a>
+    <p><strong>Tools:</strong> Figma</p>
+
+    <p><strong>Responsibilities:</strong></p>
+
+    <ul>
+      <li>UX Research</li>
+      <li>UI Design</li>
+      <li>Wireframing</li>
+      <li>Prototyping</li>
+      <li>Information Architecture</li>
+      <li>User Flow Design</li>
+    </ul>
+  </div>
+
+  <div class="project-image">
+    <img src="Images/campus-connect-thumbnail.png" alt="Campus Connect UI">
+    <p class="view-project">Click to view project →</p>
+  </div>
+
+</a>
   
 </section>
 
